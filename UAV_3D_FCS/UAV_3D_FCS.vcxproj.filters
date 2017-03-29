@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UAV_3D_FCS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UAV_3D_FCSDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UAV_3D_FCSView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\FCToPCProtocolStruct.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\FCToPCProtocolConvertToRealData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\Common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\DeSerializer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\JsonUtil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\Kapok.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\Serializer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kapok\traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\Any.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\function_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageBus.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD\HUD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD\HUDViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\ConnectionViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection\TcpClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG\OSGView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG\OSGViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightControl\FlightSysViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayBack\PlayBackViewControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\MySplitterWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Graphic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryDC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\GraphicView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxNoWheel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Server\ServerSQLOperation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TimesDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\CellRange.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\CMyGridCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\GridCell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\GridCellBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\GridCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\GridDropTarget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\InPlaceEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\TitleTip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellCheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellCombo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellDateTime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellNumeric.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl\NewCellTypes\GridURLCell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayControl\MirrorDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayControl\MyButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayControl\MyToolTipCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayControl\OwnSliderCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GPS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UavView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Meter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Compass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UAV_3D_FCS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UAV_3D_FCSDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UAV_3D_FCSView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\FCToPCProtocolConvertToRealData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\FCToPCProtocolStruct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kapok\Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD\HUD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD\HUDViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection\ConnectionViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection\TcpClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG\OSGView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG\OSGViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FlightControl\FlightSysViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayBack\PlayBackViewControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\MySplitterWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Graphic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxNoWheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\GraphicView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\SeverSQLOperation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimesDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\CMyGridCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\GridCell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\GridCellBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\GridCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\GridDropTarget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\InPlaceEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\TitleTip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellCombo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellDateTime.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellNumeric.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl\NewCellTypes\GridURLCell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayControl\MirrorDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayControl\MyButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayControl\MyToolTipCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayControl\OwnSliderCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GPS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UavView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Meter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Compass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UAV_3D_FCS.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UAV_3D_FCS.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\UAV_3D_FCSDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UAV_3D_FCS.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\play_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\play_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\red_top_sign_back_horz.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\replay_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\replay_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\speedup_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\speedup_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\stop_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\stop_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\speeddown_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\speeddown_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tooltip_back_horizon.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tooltip_back_vertical.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tooltip_trans_back_horizon.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tooltip_trans_back_horizon_up.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_disabled.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_slider_selected.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_slider_selected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_slider_unselected.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\volume_slider_unselected.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\channel.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\green_bottom_sign_back_horz.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\left.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\left_left.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\back.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_back_horizon.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_back_vertical.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_trans_back_horizon.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_trans_back_horizon_up.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\splash2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\splash.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

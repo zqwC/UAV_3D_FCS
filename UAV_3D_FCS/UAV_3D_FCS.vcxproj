@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8E76187-EEE5-4C78-8D66-94BB3AD82789}</ProjectGuid>
+    <RootNamespace>UAV_3D_FCS</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\VS2013\VC\include\boost;C:\Program Files %28x86%29\Microsoft Visual Studio 12.0\VC\include\boost;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>D:\VS2013\VC\lib\libx64;C:\Program Files %28x86%29\Microsoft Visual Studio 12.0\VC\lib\libx64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComboBoxNoWheel.h" />
+    <ClInclude Include="Compass.h" />
+    <ClInclude Include="Connection\ConnectionViewControl.h" />
+    <ClInclude Include="Connection\TcpClient.h" />
+    <ClInclude Include="DisplayControl\MirrorDlg.h" />
+    <ClInclude Include="DisplayControl\MyButton.h" />
+    <ClInclude Include="DisplayControl\MyToolTipCtrl.h" />
+    <ClInclude Include="DisplayControl\OwnSliderCtrl.h" />
+    <ClInclude Include="FlightControl\FlightSysViewControl.h" />
+    <ClInclude Include="GPS.h" />
+    <ClInclude Include="Graphic\Graphic.h" />
+    <ClInclude Include="Graphic\GraphicView.h" />
+    <ClInclude Include="GridCtrl\CellRange.h" />
+    <ClInclude Include="GridCtrl\CMyGridCtrl.h" />
+    <ClInclude Include="GridCtrl\GridCell.h" />
+    <ClInclude Include="GridCtrl\GridCellBase.h" />
+    <ClInclude Include="GridCtrl\GridCtrl.h" />
+    <ClInclude Include="GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="GridCtrl\InPlaceEdit.h" />
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellCheck.h" />
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellCombo.h" />
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellDateTime.h" />
+    <ClInclude Include="GridCtrl\NewCellTypes\GridCellNumeric.h" />
+    <ClInclude Include="GridCtrl\NewCellTypes\GridURLCell.h" />
+    <ClInclude Include="GridCtrl\TitleTip.h" />
+    <ClInclude Include="HUD\HUD.h" />
+    <ClInclude Include="HUD\HUDViewControl.h" />
+    <ClInclude Include="kapok\Common.hpp" />
+    <ClInclude Include="kapok\DeSerializer.hpp" />
+    <ClInclude Include="kapok\JsonUtil.hpp" />
+    <ClInclude Include="kapok\Kapok.hpp" />
+    <ClInclude Include="kapok\Serializer.hpp" />
+    <ClInclude Include="kapok\traits.hpp" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemoryDC.h" />
+    <ClInclude Include="MessageBus\Any.hpp" />
+    <ClInclude Include="MessageBus\function_traits.hpp" />
+    <ClInclude Include="MessageBus\MessageBus.hpp" />
+    <ClInclude Include="Meter.h" />
+    <ClInclude Include="OSG\OSGView.h" />
+    <ClInclude Include="OSG\OSGViewControl.h" />
+    <ClInclude Include="PlayBack\PlayBackViewControl.h" />
+    <ClInclude Include="ProcessDlg.h" />
+    <ClInclude Include="protocol\FCToPCProtocolConvertToRealData.h" />
+    <ClInclude Include="protocol\FCToPCProtocolStruct.hpp" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Server\ServerSQLOperation.h" />
+    <ClInclude Include="SplashWnd.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimesDlg.h" />
+    <ClInclude Include="Tools\MySplitterWnd.h" />
+    <ClInclude Include="UavView.h" />
+    <ClInclude Include="UAV_3D_FCS.h" />
+    <ClInclude Include="UAV_3D_FCSDoc.h" />
+    <ClInclude Include="UAV_3D_FCSView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComboBoxNoWheel.cpp" />
+    <ClCompile Include="Compass.cpp" />
+    <ClCompile Include="Connection\ConnectionViewControl.cpp" />
+    <ClCompile Include="Connection\TcpClient.cpp" />
+    <ClCompile Include="DisplayControl\MirrorDlg.cpp" />
+    <ClCompile Include="DisplayControl\MyButton.cpp" />
+    <ClCompile Include="DisplayControl\MyToolTipCtrl.cpp" />
+    <ClCompile Include="DisplayControl\OwnSliderCtrl.cpp" />
+    <ClCompile Include="FlightControl\FlightSysViewControl.cpp" />
+    <ClCompile Include="GPS.cpp" />
+    <ClCompile Include="Graphic\Graphic.cpp" />
+    <ClCompile Include="Graphic\GraphicView.cpp" />
+    <ClCompile Include="GridCtrl\CMyGridCtrl.cpp" />
+    <ClCompile Include="GridCtrl\GridCell.cpp" />
+    <ClCompile Include="GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellCheck.cpp" />
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellCombo.cpp" />
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellDateTime.cpp" />
+    <ClCompile Include="GridCtrl\NewCellTypes\GridCellNumeric.cpp" />
+    <ClCompile Include="GridCtrl\NewCellTypes\GridURLCell.cpp" />
+    <ClCompile Include="GridCtrl\TitleTip.cpp" />
+    <ClCompile Include="HUD\HUD.cpp" />
+    <ClCompile Include="HUD\HUDViewControl.cpp" />
+    <ClCompile Include="kapok\Common.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Meter.cpp" />
+    <ClCompile Include="OSG\OSGView.cpp" />
+    <ClCompile Include="OSG\OSGViewControl.cpp" />
+    <ClCompile Include="PlayBack\PlayBackViewControl.cpp" />
+    <ClCompile Include="ProcessDlg.cpp" />
+    <ClCompile Include="protocol\FCToPCProtocolConvertToRealData.cpp" />
+    <ClCompile Include="protocol\FCToPCProtocolStruct.cpp" />
+    <ClCompile Include="Server\SeverSQLOperation.cpp" />
+    <ClCompile Include="SplashWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TimesDlg.cpp" />
+    <ClCompile Include="Tools\MySplitterWnd.cpp" />
+    <ClCompile Include="UavView.cpp" />
+    <ClCompile Include="UAV_3D_FCS.cpp" />
+    <ClCompile Include="UAV_3D_FCSDoc.cpp" />
+    <ClCompile Include="UAV_3D_FCSView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UAV_3D_FCS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UAV_3D_FCS.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_back_horizon.png" />
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_back_vertical.png" />
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_trans_back_horizon.png" />
+    <Image Include="F:\c++\UAV_3D_FCS\UAV_3D_FCS\res\tooltip_trans_back_horizon_up.png" />
+    <Image Include="res\back.png" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bitmap4.bmp" />
+    <Image Include="res\channel.png" />
+    <Image Include="res\green_bottom_sign_back_horz.png" />
+    <Image Include="res\left.png" />
+    <Image Include="res\left_left.png" />
+    <Image Include="res\play_selected.png" />
+    <Image Include="res\play_unselected.png" />
+    <Image Include="res\red_top_sign_back_horz.png" />
+    <Image Include="res\replay_selected.png" />
+    <Image Include="res\replay_unselected.png" />
+    <Image Include="res\speeddown_selected.png" />
+    <Image Include="res\speeddown_unselected.png" />
+    <Image Include="res\speedup_selected.png" />
+    <Image Include="res\speedup_unselected.png" />
+    <Image Include="res\splash.bmp" />
+    <Image Include="res\splash2.bmp" />
+    <Image Include="res\stop_selected.png" />
+    <Image Include="res\stop_unselected.png" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\tooltip_back_horizon.png" />
+    <Image Include="res\tooltip_back_vertical.png" />
+    <Image Include="res\tooltip_trans_back_horizon.png" />
+    <Image Include="res\tooltip_trans_back_horizon_up.png" />
+    <Image Include="res\UAV_3D_FCS.ico" />
+    <Image Include="res\UAV_3D_FCSDoc.ico" />
+    <Image Include="res\volume_disabled.png" />
+    <Image Include="res\volume_selected.png" />
+    <Image Include="res\volume_slider_selected.bmp" />
+    <Image Include="res\volume_slider_selected.png" />
+    <Image Include="res\volume_slider_unselected.bmp" />
+    <Image Include="res\volume_slider_unselected.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UAV_3D_FCS.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
